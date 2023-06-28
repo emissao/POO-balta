@@ -1,0 +1,5 @@
+C:\Users\emers\OneDrive\Documentos\MeuPC\POO-balta\obj\Debug\net6.0\POO-balta.csproj.AssemblyReference.cache
+C:\Users\emers\OneDrive\Documentos\MeuPC\POO-balta\obj\Debug\net6.0\POO-balta.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emers\OneDrive\Documentos\MeuPC\POO-balta\obj\Debug\net6.0\POO-balta.AssemblyInfoInputs.cache
+C:\Users\emers\OneDrive\Documentos\MeuPC\POO-balta\obj\Debug\net6.0\POO-balta.AssemblyInfo.cs
+C:\Users\emers\OneDrive\Documentos\MeuPC\POO-balta\obj\Debug\net6.0\POO-balta.csproj.CoreCompileInputs.cache
