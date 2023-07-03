@@ -16,13 +16,15 @@ namespace Emissao
                     Console.WriteLine(article.Title);
                     Console.WriteLine(article.Url);
                 }
-                var course = new IList<Course> Course()
+              
                 var courseOOP = new Course("Fundamento OOP", "Fundamentos-oop");
                 var courseCsharp = new Course("Fundamento C#", "Fundamentos-csharp");
                 var courseAspNet = new Course("Fundamento ASP.NET", "Fundamentos-ASPNET");
                 courses.Add(courseOOP);
                 courses.Add(courseCsharp);
                 courses.Add(courseAspNet);  
+                if(courseAspNet.IsInvalid)
+                courseAspNet.AddNotification(new Notification);
                 var careers = new IList<Career>();
                 var CareerDotnet = new Career("Especialista .NET", "especialista dotnet");     
                 var CareerItem = new CareerItem(1,"Comece por aqui", "", courseAspNet);
@@ -38,8 +40,13 @@ namespace Emissao
                     foreach(var item in career.Items)
                     {
                         Console.WriteLine($"{item.Order} {item.Title}");
-                        Console.WriteLine(item.Course.Title);
-                        Console.WriteLine(item.Course.Level);
+                        Console.WriteLine(item.Course?.Title);
+                        Console.WriteLine(item.Course?.Level);
+                        
+                        foreach(var notification in item.Notifications)
+                        {
+                            Console.WriteLine(${notification.Property} - {notification.Menssage});
+                        }
                     }
                 }
             }

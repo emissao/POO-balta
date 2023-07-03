@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 namespace Emissao.ContentContext
 {
-     public class Module
+     public class Module : Base
     {
         public Module()
         {
