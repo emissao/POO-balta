@@ -1,6 +1,6 @@
 using Emissao.NotificationContext;
 
-namespace Emissao.ContentContext
+namespace Emissao.SharedContext 
 {
     public abstract class Base : Notifiable  
     {

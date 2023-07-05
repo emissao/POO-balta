@@ -1,4 +1,5 @@
 ﻿using Emissao.ContentContext;
+using Emissao.SubscriptionContext;
 
 namespace Emissao
 {
@@ -48,7 +49,11 @@ namespace Emissao
                             Console.WriteLine(${notification.Property} - {notification.Menssage});
                         }
                     }
+                    var PayPalSubscription = new PayPalSubscription();
+                    var Student = new Student();
+                    student.CreateSubscription(PayPalSubscription);
                 }
+                
             }
 
         }

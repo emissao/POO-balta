@@ -1,7 +1,7 @@
 namespace Emissao.ContentContext
     {
-        public abstract class Content : Base
-        {
+        public abstract class Content : SharedContext.Base
+    {
             public Content (string Title, string Url)
             {
                 
